@@ -1,0 +1,14 @@
+.section-transition {
+  transition: opacity 0.3s, transform 0.3s;
+  opacity: 0;
+  transform: translateY(40px);
+}
+.section-transition.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background: linear-gradient(to bottom right, #1f2937, #111827);
+  }
+}
